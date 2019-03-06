@@ -1,0 +1,24 @@
+{
+    "name": "threejs-ego",
+    "private": true,
+    "dependencies": {
+      "buzz": "~1.1.10",
+      "jquery": "~2.1.4",
+      "modernizr": "~2.8.1",
+      "underscore": "~1.8.3",
+      "stats.js": "*",
+      "gsap": "~1.18.0",
+      "threex.universalloader": "*",
+      "threex.windowresize": "*",
+      "threex.objcoord": "*",
+      "three.js": "threejs#r71"
+    },
+    "overrides": {
+      "dat-gui": {
+        "main": "build/dat.gui.js"
+      }
+    },
+    "devDependencies": {
+      "dat-gui": "~0.5.1"
+    }
+  }
