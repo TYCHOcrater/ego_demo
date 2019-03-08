@@ -74,18 +74,18 @@ Application.prototype = {
 
         this.infoLayer.triggerNextInfo();
 
-        $(window).mousemove( function(event) ) {
+        $(window).mousemove( function(event ) {
             event.preventDefault();
             this.scene.mousemove( event );
             this.infoLayer.mousemove( event );
-        }.bind( this );
+        }.bind( this ));
 
         $(window).on("blud focus", function(e) {
             var prevType = $(this).data("prevType");
 
             if(prevType != e.type) {
                 switch (e.type) {
-                    case "focus";
+                    case "focus":
                         if(this.sound)
                             this.sound.fadeTo(100, 500);
                         break;
@@ -168,9 +168,9 @@ Application.prototype = {
     onSceneLoadComplete: function() {
         this.sceneLoaded = true;
         this.verifyAssetLoad();
-    }
+    },
 
     onSceneEgoPositionUpdate: function() {
         this.infoLayer.setOrigin( position.x, position.y );
-    }
+    },
 };
